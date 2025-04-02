@@ -1,0 +1,36 @@
+* {
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.logo {
+  width: 32px;
+}
+
+.btn-1 {
+  border-style: none;
+  color: gray;
+  font-size: 12px;
+}
+
+.btn-2 {
+  border-style: none;
+  color: gray;
+  font-size: 10px;
+}
+
+.btn-signup {
+  border-style: none;
+  color: gray;
+  font-size: 10px;
+}
+
+.btn-login {
+  border-radius: 30rem;
+  background-color: white;
+}
