@@ -1,9 +1,9 @@
 html,body {	margin: 0;	padding: 0;}
 
 header {
-  display: inline-flex;
+  display: flex;
   background-color: black;
-  padding: 0 25px;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -13,10 +13,10 @@ nav {
 
 .logo {
   width: 100px;
-  margin: 20px 0;
+  
 }
 
-.menu {
+.menu-ui {
   display: flex;
   list-style: none;
   padding: 0;
@@ -24,30 +24,13 @@ nav {
   color: white;
 }
 
-.premium {
+.left-menu {
   background-color: black;
   border-style: none;
   color: white;
 }
 
-.apply {
-  background-color: black;
-  border-style: none;
-  color: white;
-}
-.download {
-  background-color: black;
-  border-style: none;
-  color: white;
-}
-
-.btn-signup {
-  background-color: black;
-  border-style: none;
-  color: lightgray;
-}
-
-.btn-login {
+.right-menu {
   background-color: black;
   border-style: none;
   color: lightgray;
