@@ -1,0 +1,54 @@
+html,body {	margin: 0;	padding: 0;}
+
+header {
+  display: inline-flex;
+  background-color: black;
+  padding: 0 25px;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+}
+
+.logo {
+  width: 100px;
+  margin: 20px 0;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+  color: white;
+}
+
+.premium {
+  background-color: black;
+  border-style: none;
+  color: white;
+}
+
+.apply {
+  background-color: black;
+  border-style: none;
+  color: white;
+}
+.download {
+  background-color: black;
+  border-style: none;
+  color: white;
+}
+
+.btn-signup {
+  background-color: black;
+  border-style: none;
+  color: lightgray;
+}
+
+.btn-login {
+  background-color: black;
+  border-style: none;
+  color: lightgray;
+}
