@@ -1,36 +1,54 @@
-* {
+html,body {	margin: 0;	padding: 0;}
+
+header {
+  display: inline-flex;
   background-color: black;
+  padding: 0 25px;
+  width: 100%;
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
-  margin-top: 5px;
 }
 
 .logo {
-  width: 32px;
+  width: 100px;
+  margin: 20px 0;
 }
 
-.btn-1 {
-  border-style: none;
-  color: gray;
-  font-size: 12px;
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+  color: white;
 }
 
-.btn-2 {
+.premium {
+  background-color: black;
   border-style: none;
-  color: gray;
-  font-size: 10px;
+  color: white;
+}
+
+.apply {
+  background-color: black;
+  border-style: none;
+  color: white;
+}
+.download {
+  background-color: black;
+  border-style: none;
+  color: white;
 }
 
 .btn-signup {
+  background-color: black;
   border-style: none;
-  color: gray;
-  font-size: 10px;
+  color: lightgray;
 }
 
 .btn-login {
-  border-radius: 30rem;
-  background-color: white;
+  background-color: black;
+  border-style: none;
+  color: lightgray;
 }
