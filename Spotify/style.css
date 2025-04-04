@@ -1,37 +1,122 @@
-html,body {	margin: 0;	padding: 0;}
+body {
+  margin: 0;
+}
 
 header {
-  display: flex;
-  background-color: black;
-  justify-content: space-between;
   width: 100%;
+  background-color: black;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 12vw;
+  height: auto;
+  object-fit: contain;
+  min-width: 80px;
+  max-width: 120px;
 }
 
 nav {
   display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  max-width: 800px;
 }
 
-.logo {
-  width: 100px;
-  
+/* 프리미엄 메뉴 숨기기 */
+#premium-menu {
+  display: none;
+  position: absolute;
+  background-color: #222;
+  padding: 10px;
+  width: 200px;
+  top: 40px; /* 버튼 밑으로 드롭다운 */
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+/* 프리미엄 버튼 호버 시 메뉴 드롭다운 */
+.menu:hover #premium-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+/* 드롭다운 메뉴 스타일 */
+#premium-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#premium-menu li {
+  padding: 8px;
+}
+#premium-menu li:last-child {
+  border-bottom: none;
+}
+
+.plan-title {
+  font-weight: bold;
+}
+.plan-detail {
+  display: block;
+  font-size: 12px;
+  color: #bbb;
 }
 
 .menu-ui {
   display: flex;
+  gap: 24px;
   list-style: none;
+  margin: 0;
   padding: 0;
-  align-items: center;
   color: white;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
 
-.left-menu {
-  background-color: black;
-  border-style: none;
+.menu-ui .menu button {
+  height:max-content;
+  background: none;
+  border: none;
   color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.right-menu {
-  background-color: black;
-  border-style: none;
-  color: lightgray;
+.menu-ui .menu button:hover {
+  color: #1ed760;
+}
+
+/* 1200px 이하 화면 */
+@media screen and (max-width: 1024px) {
+  .menu-ui {
+    gap: 16px;
+  }
+}
+/* 768px 이하 화면 */
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .logo {
+    width: 100px;
+  }
+}
+/* 480px 이하 화면 */
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 80px;
+  }
 }
