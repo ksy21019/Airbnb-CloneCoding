@@ -1,5 +1,8 @@
+html,body {	margin: 0;	padding: 0;}
+
 body {
   margin: 0;
+  background-color: black;
 }
 
 header {
@@ -41,26 +44,31 @@ nav {
   background-color: #222;
   padding: 10px;
   width: 200px;
-  top: 40px; /* 버튼 밑으로 드롭다운 */
+  top: 40px;
+  /* 버튼 밑으로 드롭다운 */
   opacity: 0;
   transform: translateY(-20px);
   transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
+
 /* 프리미엄 버튼 호버 시 메뉴 드롭다운 */
 .menu:hover #premium-menu {
   display: block;
   opacity: 1;
   transform: translateY(0);
 }
+
 /* 드롭다운 메뉴 스타일 */
 #premium-menu ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 #premium-menu li {
   padding: 8px;
 }
+
 #premium-menu li:last-child {
   border-bottom: none;
 }
@@ -68,6 +76,7 @@ nav {
 .plan-title {
   font-weight: bold;
 }
+
 .plan-detail {
   display: block;
   font-size: 12px;
@@ -86,7 +95,7 @@ nav {
 }
 
 .menu-ui .menu button {
-  height:max-content;
+  height: max-content;
   background: none;
   border: none;
   color: white;
@@ -99,21 +108,54 @@ nav {
   color: #1ed760;
 }
 
+main section {
+  height: 600px;
+}
+
+.first {
+  background-image: url("./assets/desktop-album-evergreen-1x.png"),
+    linear-gradient(180deg, rgba(255, 210, 215, 1) 0%, rgba(0, 0, 0, 0) 40%);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.first > div > div {
+  border:1px solid yellow;
+  height:100%;
+  width:50%;
+  padding: 50px;
+}
+.first > div > div h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+.first > div > div h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: white;
+}
+.first > div > div p {
+  color: white
+}
+
 /* 1200px 이하 화면 */
 @media screen and (max-width: 1024px) {
   .menu-ui {
     gap: 16px;
   }
 }
+
 /* 768px 이하 화면 */
 @media screen and (max-width: 768px) {
   nav {
     display: none;
   }
+
   .logo {
     width: 100px;
   }
 }
+
 /* 480px 이하 화면 */
 @media screen and (max-width: 480px) {
   .logo {
