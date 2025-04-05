@@ -129,17 +129,49 @@ main section {
   border:1px solid yellow;
   height: auto;
 }
+.headline {
+  margin-bottom: 16px;
+}
 .first > div > div h1 {
   font-size: 2.5rem;
+  line-height:110%;
   color: white;
 }
 .first > div > div h2 {
+  margin: 15px 0;
   font-size: 1rem;
   font-weight: 300;
   color: white;
 }
+.first-btn {
+  display: flex;
+  column-gap: 16px;
+  margin-top: 35px;
+  margin-bottom: 28px;
+}
+.first > div > div > div button {
+  border-radius: 25px;
+  height: 50px;
+}
+.start-btn > button {
+  width: 110px;
+  background-color: rgb(255, 210, 215);
+  border: none;
+}
+.fee-btn > button {
+  width: 160px;
+  background-color: black;
+  color: white;
+  border-width: 1px;
+  border-color: white;
+  border-style: solid;
+}
 .first > div > div p {
   color: white
+}
+
+a:link {
+  color: white;
 }
 
 /* 1200px 이하 화면 */
