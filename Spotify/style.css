@@ -3,10 +3,14 @@ body {
   margin: 0;
   padding: 0;
 }
-
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  background-color: black;
+  background-color: rgb(18, 18, 18);
   color: #fff;
 }
 
@@ -125,7 +129,6 @@ main section {
 }
 
 .first>div {
-  border: 1px solid red;
   height: auto;
   width: 70%;
   padding: 110px 20px 20px 20px;
@@ -133,7 +136,6 @@ main section {
 }
 
 .first>div>div {
-  border: 1px solid yellow;
   height: auto;
 }
 
@@ -201,22 +203,19 @@ a:link {
 
 .second {
   background-color: rgb(18, 18, 18);
+  align-content: center;
 }
 
 .second-content {
-  border: 1px solid red;
-  height: auto;
   justify-items: center;
+  text-align: center;
 }
 
 .ComponentWrapper {
-  border: 1px solid yellow;
   width: 70%;
-  height: auto;
 }
 .second-title {
   width: 100%;
-  height: auto;
   margin-bottom: 24px;
 }
 .second-title > h2 {
@@ -230,7 +229,7 @@ a:link {
   font-weight: 400;
 }
 .TableWrapper {
-  width: 70%;
+  width: 60%;
   border-collapse: collapse;
 }
 .TableWrapper > thead > tr {
@@ -246,10 +245,17 @@ a:link {
 
 .TableWrapper > thead > tr > th > div {
   display: flex;
+  text-align: left;
 }
 
 .table-head-benefit {
   vertical-align: bottom;
+}
+.fee {
+  justify-items: center;
+}
+.fee > div > img {
+  margin-right: 3px;
 }
 
 .third-th-logo {
@@ -258,20 +264,26 @@ a:link {
 }
 
 tbody > tr {
+  line-height: 50px;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: rgb(128, 128, 128);
 }
 tbody > tr > th {
   text-align: left;
+  padding: 10px;
 }
 
-tbody > tr > td {
-  text-align: center;
+tbody > tr > td > div > svg {
+  vertical-align: middle;
 }
 
 .benefits {
   color: rgb(179, 179, 179);
+}
+.benefits > span {
+  border-bottom-style: dashed;
+  border-bottom-width: 1.5px;
 }
 
 /* 1200px 이하 화면 */
