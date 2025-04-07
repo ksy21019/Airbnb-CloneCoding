@@ -3,6 +3,7 @@ html,body {	margin: 0;	padding: 0;}
 body {
   margin: 0;
   background-color: black;
+  color: #fff;
 }
 
 header {
@@ -89,7 +90,7 @@ nav {
   list-style: none;
   margin: 0;
   padding: 0;
-  color: white;
+  color: #fff;
   flex-wrap: nowrap;
   overflow: hidden;
 }
@@ -98,7 +99,7 @@ nav {
   height: max-content;
   background: none;
   border: none;
-  color: white;
+  color: #fff;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
@@ -114,14 +115,14 @@ main section {
 
 .first {
   background-image: url("./assets/desktop-album-evergreen-1x.png"),
-    linear-gradient(180deg, rgba(255, 210, 215, 1) 0%, rgba(0, 0, 0, 0) 40%);
+    linear-gradient(180deg, rgb(255, 210, 215) 0%, rgb(18, 18, 18) 40%);
   background-repeat: no-repeat;
   background-position: right top;
 }
 .first > div {
-  border:1px solid palevioletred;
+  border:1px solid red;
   height: auto;
-  width:50%;
+  width:70%;
   padding: 110px 20px 20px 20px;
   margin-right: 50%;
 }
@@ -129,17 +130,82 @@ main section {
   border:1px solid yellow;
   height: auto;
 }
-.first > div > div h1 {
-  font-size: 2.5rem;
-  color: white;
+.headline {
+  margin-bottom: 16px;
+  width: 70%;
 }
-.first > div > div h2 {
+.fs-title {
+  font-size: 2.5rem;
+  line-height:110%;
+  color: #fff;
+}
+.fs-subtitle {
+  margin: 15px 0;
   font-size: 1rem;
   font-weight: 300;
-  color: white;
+  color: #fff;
+}
+.first-btn {
+  display: flex;
+  column-gap: 16px;
+  margin-top: 35px;
+  margin-bottom: 28px;
+}
+.first > div > div > div button {
+  border-radius: 25px;
+  height: 50px;
+}
+.start-btn > button {
+  width: 110px;
+  background-color: rgb(255, 210, 215);
+  border: none;
+}
+.fee-btn > button {
+  width: 160px;
+  background-color: black;
+  color: #fff;
+  border-width: 1px;
+  border-color: #fff;
+  border-style: solid;
 }
 .first > div > div p {
-  color: white
+  font-size: 0.5rem;
+  color: #fff;
+}
+a:link {
+  color: #fff;
+}
+.ComponentWrapper {
+  justify-items: center;
+}
+.ComponentWrapper > div {
+  justify-items: center;
+}
+.second {
+  background-attachment: scroll;
+  background-color: rgb(18, 18, 18);
+}
+.second > div {
+  border:1px solid red;
+  height: auto;
+  justify-items: center;
+}
+.second > div > div {
+  border:1px solid yellow;
+  height: auto;
+}
+th > div {
+  display: flex;
+}
+.third-th-logo {
+  width: 15px;
+  height: 15px;
+}
+tbody > tr {
+  text-align: center;
+}
+.benefits {
+  color: rgb(179, 179, 179);
 }
 
 /* 1200px 이하 화면 */
