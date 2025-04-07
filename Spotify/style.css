@@ -1,4 +1,8 @@
-html,body {	margin: 0;	padding: 0;}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   margin: 0;
@@ -119,48 +123,57 @@ main section {
   background-repeat: no-repeat;
   background-position: right top;
 }
-.first > div {
-  border:1px solid red;
+
+.first>div {
+  border: 1px solid red;
   height: auto;
-  width:70%;
+  width: 70%;
   padding: 110px 20px 20px 20px;
   margin-right: 50%;
 }
-.first > div > div {
-  border:1px solid yellow;
+
+.first>div>div {
+  border: 1px solid yellow;
   height: auto;
 }
+
 .headline {
   margin-bottom: 16px;
   width: 70%;
 }
+
 .fs-title {
   font-size: 2.5rem;
-  line-height:110%;
+  line-height: 110%;
   color: #fff;
 }
+
 .fs-subtitle {
   margin: 15px 0;
   font-size: 1rem;
   font-weight: 300;
   color: #fff;
 }
+
 .first-btn {
   display: flex;
   column-gap: 16px;
   margin-top: 35px;
   margin-bottom: 28px;
 }
-.first > div > div > div button {
+
+.first>div>div>div button {
   border-radius: 25px;
   height: 50px;
 }
-.start-btn > button {
+
+.start-btn>button {
   width: 110px;
   background-color: rgb(255, 210, 215);
   border: none;
 }
-.fee-btn > button {
+
+.fee-btn>button {
   width: 160px;
   background-color: black;
   color: #fff;
@@ -168,42 +181,95 @@ main section {
   border-color: #fff;
   border-style: solid;
 }
-.first > div > div p {
+
+.first>div>div p {
   font-size: 0.5rem;
   color: #fff;
 }
+
 a:link {
   color: #fff;
 }
+
 .ComponentWrapper {
   justify-items: center;
 }
-.ComponentWrapper > div {
+
+.ComponentWrapper>div {
   justify-items: center;
 }
+
 .second {
-  background-attachment: scroll;
   background-color: rgb(18, 18, 18);
 }
-.second > div {
-  border:1px solid red;
+
+.second-content {
+  border: 1px solid red;
   height: auto;
   justify-items: center;
 }
-.second > div > div {
-  border:1px solid yellow;
+
+.ComponentWrapper {
+  border: 1px solid yellow;
+  width: 70%;
   height: auto;
 }
-th > div {
+.second-title {
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+}
+.second-title > h2 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.second-title > h3 {
+  margin-top: 8px;
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+.TableWrapper {
+  width: 70%;
+  border-collapse: collapse;
+}
+.TableWrapper > thead > tr {
+  height: 130px;
+}
+.TableWrapper > thead > tr > th {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(128, 128, 128);
+  font-weight: 700;
+  padding: 10px;
+}
+
+.TableWrapper > thead > tr > th > div {
   display: flex;
 }
+
+.table-head-benefit {
+  vertical-align: bottom;
+}
+
 .third-th-logo {
   width: 15px;
   height: 15px;
 }
+
 tbody > tr {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(128, 128, 128);
+}
+tbody > tr > th {
+  text-align: left;
+}
+
+tbody > tr > td {
   text-align: center;
 }
+
 .benefits {
   color: rgb(179, 179, 179);
 }
