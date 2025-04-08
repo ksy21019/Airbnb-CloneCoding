@@ -3,15 +3,18 @@ body {
   margin: 0;
   padding: 0;
 }
-* { 
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   background-color: rgb(18, 18, 18);
   color: #fff;
+  min-height: 100vh;
 }
 
 header {
@@ -126,13 +129,14 @@ main section {
     linear-gradient(180deg, rgb(255, 210, 215) 0%, rgb(18, 18, 18) 40%);
   background-repeat: no-repeat;
   background-position: right top;
+  height: 40vh;
 }
 
 .first>div {
   height: auto;
   width: 70%;
-  padding: 110px 20px 20px 20px;
-  margin-right: 50%;
+  padding: 100px 20px 20px 20px;
+  margin: auto;
 }
 
 .first>div>div {
@@ -204,6 +208,7 @@ a:link {
 .second {
   background-color: rgb(18, 18, 18);
   align-content: center;
+  height: 80vh;
 }
 
 .second-content {
@@ -214,28 +219,35 @@ a:link {
 .ComponentWrapper {
   width: 70%;
 }
+
 .second-title {
   width: 100%;
   margin-bottom: 24px;
 }
-.second-title > h2 {
+
+.second-title>h2 {
   margin: 0;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
-.second-title > h3 {
+
+.second-title>h3 {
   margin-top: 8px;
   margin-bottom: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
 }
+
 .TableWrapper {
   width: 60%;
   border-collapse: collapse;
 }
-.TableWrapper > thead > tr {
+
+.TableWrapper>thead>tr {
   height: 130px;
 }
-.TableWrapper > thead > tr > th {
+
+.TableWrapper>thead>tr>th {
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: rgb(128, 128, 128);
@@ -243,7 +255,7 @@ a:link {
   padding: 10px;
 }
 
-.TableWrapper > thead > tr > th > div {
+.TableWrapper>thead>tr>th>div {
   display: flex;
   text-align: left;
 }
@@ -251,10 +263,12 @@ a:link {
 .table-head-benefit {
   vertical-align: bottom;
 }
+
 .fee {
   justify-items: center;
 }
-.fee > div > img {
+
+.fee>div>img {
   margin-right: 3px;
 }
 
@@ -263,28 +277,87 @@ a:link {
   height: 15px;
 }
 
-tbody > tr {
+tbody>tr {
   line-height: 50px;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: rgb(128, 128, 128);
 }
-tbody > tr > th {
+
+tbody>tr>th {
   text-align: left;
   padding: 10px;
 }
 
-tbody > tr > td > div > svg {
+tbody>tr>td>div>svg {
   vertical-align: middle;
 }
 
 .benefits {
   color: rgb(179, 179, 179);
 }
-.benefits > span {
+
+.benefits>span {
   border-bottom-style: dashed;
   border-bottom-width: 1.5px;
 }
+
+.third {
+  border: solid 1px yellow;
+  background-color: rgb(18, 18, 18);
+  align-content: center;
+  height: 50vh;
+
+  div {
+    border: solid 1px #fff;
+    text-align: center;
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    h3 {
+      margin: 20px;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    span {
+      border-bottom: solid 1.5px;
+    }
+  }
+
+  .payment-way {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    li>img {
+      width: 50px;
+      object-fit: contain;
+    }
+  }
+  
+  li {
+    list-style: none;
+  }
+
+  aside {
+    border: solid 1px yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    h3 {
+      font-size: 2rem;
+    }
+
+  }
+
+}
+
 
 /* 1200px 이하 화면 */
 @media screen and (max-width: 1024px) {
