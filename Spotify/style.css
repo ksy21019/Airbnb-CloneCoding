@@ -303,7 +303,7 @@ tbody>tr>td>div>svg {
 }
 
 .third {
-  border: solid 1px yellow;
+  border: solid 1px red;
   background-color: rgb(18, 18, 18);
   align-content: center;
   height: 50vh;
@@ -333,14 +333,18 @@ tbody>tr>td>div>svg {
     justify-content: center;
     gap: 10px;
 
-    li>img {
+    li {
+      list-style: none;
+    }
+
+    li > img {
       width: 50px;
       object-fit: contain;
     }
   }
-  
-  li {
-    list-style: none;
+
+  .third-section-benefits {
+    list-style-image: url(./assets/check-solid.svg);
   }
 
   aside {
