@@ -284,6 +284,13 @@ tbody>tr {
   border-bottom-color: rgb(128, 128, 128);
 }
 
+tbody :hover {
+  background-color: rgb(28, 28, 28);
+  .checked, .checked > div {
+    background-color: rgb(44, 44, 44);
+  }
+}
+
 tbody>tr>th {
   text-align: left;
   padding: 10px;
@@ -303,13 +310,11 @@ tbody>tr>td>div>svg {
 }
 
 .third {
-  border: solid 1px red;
   background-color: rgb(18, 18, 18);
   align-content: center;
   height: 50vh;
 
   div {
-    border: solid 1px #fff;
     text-align: center;
 
     h2 {
@@ -345,13 +350,15 @@ tbody>tr>td>div>svg {
 
   .third-section-benefits {
     list-style-image: url(./assets/check-solid.svg);
+    margin: 16px 0;
   }
 
   aside {
-    border: solid 1px yellow;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 40px 0;
+    padding: 0 32px;
     gap: 40px;
 
     h3 {
@@ -361,6 +368,7 @@ tbody>tr>td>div>svg {
   }
 
 }
+
 
 
 /* 1200px 이하 화면 */
