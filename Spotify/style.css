@@ -286,7 +286,9 @@ tbody>tr {
 
 tbody :hover {
   background-color: rgb(28, 28, 28);
-  .checked, .checked > div {
+
+  .checked,
+  .checked>div {
     background-color: rgb(44, 44, 44);
   }
 }
@@ -342,7 +344,7 @@ tbody>tr>td>div>svg {
       list-style: none;
     }
 
-    li > img {
+    li>img {
       width: 50px;
       object-fit: contain;
     }
@@ -369,7 +371,17 @@ tbody>tr>td>div>svg {
 
 }
 
+.forth {
+  .plan-premium-title img {
+    width: 20px;
+  }
 
+  .container > div {
+    border: 1px solid gray;
+    width: 33%;
+    height: 400px;
+  }
+}
 
 /* 1200px 이하 화면 */
 @media screen and (max-width: 1024px) {
