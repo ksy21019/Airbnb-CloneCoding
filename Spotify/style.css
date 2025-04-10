@@ -385,12 +385,13 @@ tbody>tr>td>div>svg {
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin: 0px 5%;
+    margin: 0px 3%;
   }
   .container > div {
-    border: 1px solid rgb(79, 79, 79);
-    border-radius: 5px;
-    width: 300px;
+    background-color: rgb(42, 42, 42);
+    border: 1px solid rgb(42, 42, 42);
+    border-radius: 10px;
+    width: 400px;
     height: 400px;
 
     .individual-tag {
@@ -400,7 +401,8 @@ tbody>tr>td>div>svg {
       width: 135px;
       height: 30px;
       background-color: rgb(255, 210, 215);
-      border-radius: 5px 0 5px 0;
+      border-radius: 10px 0 10px 0;
+      font-weight: 700;
       color: #222;
     }
 
@@ -409,7 +411,7 @@ tbody>tr>td>div>svg {
       align-items: center;
       gap: 5px;
       margin-top: 16px;
-      padding-left: 15px;
+      padding: 0 15px;
 
       span {
         font-size: 16px;
@@ -418,26 +420,41 @@ tbody>tr>td>div>svg {
 
     h3 {
       font-size: 32px;
-      padding-left: 15px;
+      margin: 10px 0;
+      padding: 0 15px;
     }
-    .descript {
+    .first-descript {
+      margin: 20px 0;
+    }
+    hr {
+      width: 90%;
+      border: rgb(75, 75, 75) 1px solid;
+      margin-top: 16px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .plan-btn {
+      text-align: center;
+      font-size: 20px;
+    }
+    .last-descript {
+      color: #bbb;
+      text-align: center;
       font-size: 12px;
+
+      a {
+        border-bottom: 0.5px solid #bbb;
+      }
     }
     p {
       font-size: 16px;
-      padding-left: 15px;
-    }
-    ul {
-      padding-left: 35px;
+      padding: 0 15px;
     }
 
   }
 
 }
 
-.forth > .container > div > div > .plan-btn {
-    justify-content: center;
-}
 
 /* 1200px 이하 화면 */
 @media screen and (max-width: 1024px) {
