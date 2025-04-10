@@ -208,7 +208,7 @@ a:link {
 .second {
   background-color: rgb(18, 18, 18);
   align-content: center;
-  height: 80vh;
+  height: 70vh;
 }
 
 .second-content {
@@ -314,7 +314,7 @@ tbody>tr>td>div>svg {
 .third {
   background-color: rgb(18, 18, 18);
   align-content: center;
-  height: 50vh;
+  height: 40vh;
 
   div {
     text-align: center;
@@ -372,15 +372,71 @@ tbody>tr>td>div>svg {
 }
 
 .forth {
+  background-color: rgb(18, 18, 18);
+  justify-content: center;
+  align-content: center;
+  height: 35vh;
+
   .plan-premium-title img {
     width: 20px;
   }
 
-  .container > div {
-    border: 1px solid gray;
-    width: 33%;
-    height: 400px;
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0px 5%;
   }
+  .container > div {
+    border: 1px solid rgb(79, 79, 79);
+    border-radius: 5px;
+    width: 300px;
+    height: 400px;
+
+    .individual-tag {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 135px;
+      height: 30px;
+      background-color: rgb(255, 210, 215);
+      border-radius: 5px 0 5px 0;
+      color: #222;
+    }
+
+    .plan-premium-title {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 16px;
+      padding-left: 15px;
+
+      span {
+        font-size: 16px;
+      }
+    }
+
+    h3 {
+      font-size: 32px;
+      padding-left: 15px;
+    }
+    .descript {
+      font-size: 12px;
+    }
+    p {
+      font-size: 16px;
+      padding-left: 15px;
+    }
+    ul {
+      padding-left: 35px;
+    }
+
+  }
+
+}
+
+.forth > .container > div > div > .plan-btn {
+    justify-content: center;
 }
 
 /* 1200px 이하 화면 */
