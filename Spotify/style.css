@@ -191,10 +191,9 @@ main section {
 .first>div>div p {
   font-size: 0.5rem;
   color: #fff;
-}
-
-a:link {
-  color: #fff;
+  a {
+    color: #fff;
+  }
 }
 
 .ComponentWrapper {
@@ -380,6 +379,24 @@ tbody>tr>td>div>svg {
   .plan-premium-title img {
     width: 20px;
   }
+  #plan-premium-individual > h3 {
+    color: rgb(255, 210, 215);
+  }
+  #individual-btn {
+    background-color: rgb(255, 210, 215);
+  }
+  #plan-premium-duo > h3 {
+    color: rgb(255, 200, 98);
+  }
+  #duo-btn {
+    background-color: rgb(255, 200, 98);
+  }
+  #plan-premium-basic > h3 {
+    color: rgb(207, 245, 106);
+  }
+  #basic-btn {
+    background-color: rgb(207, 245, 106);
+  }
 
   .container {
     display: flex;
@@ -387,7 +404,8 @@ tbody>tr>td>div>svg {
     gap: 40px;
     margin: 0px 3%;
   }
-  .container > div {
+
+  .container>div {
     background-color: rgb(42, 42, 42);
     border: 1px solid rgb(42, 42, 42);
     border-radius: 10px;
@@ -423,9 +441,11 @@ tbody>tr>td>div>svg {
       margin: 10px 0;
       padding: 0 15px;
     }
+
     .first-descript {
       margin: 20px 0;
     }
+
     hr {
       width: 90%;
       border: rgb(75, 75, 75) 1px solid;
@@ -433,11 +453,19 @@ tbody>tr>td>div>svg {
       margin-left: auto;
       margin-right: auto;
     }
+
     .plan-btn {
       text-align: center;
-      font-size: 20px;
+      button {
+        border-radius: 20px;
+        padding: 10px 65px;
+        font-size: 20px;
+        font-weight: 700;
+      }
     }
+
     .last-descript {
+      padding-top: 20px;
       color: #bbb;
       text-align: center;
       font-size: 12px;
@@ -446,6 +474,7 @@ tbody>tr>td>div>svg {
         border-bottom: 0.5px solid #bbb;
       }
     }
+
     p {
       font-size: 16px;
       padding: 0 15px;
@@ -455,6 +484,66 @@ tbody>tr>td>div>svg {
 
 }
 
+.fifth {
+  justify-items: center;
+  height: 100vh;
+  padding: 70px 0;
+
+  .fifth-title {
+    justify-items: center;
+    text-align: center;
+  }
+  .fifth-title > h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .fifth-title > p {
+    margin: 16px 0;
+    font-size: 16px;
+    color: rgb(192, 192, 192);
+
+    a {
+      color: rgb(192, 192, 192);
+    }
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .question-hidden-div {
+    background-color: rgb(29, 29, 29);
+    padding: 30px 40px;
+  }
+}
+
+.question-type {
+  padding: 20px;
+}
+
+.question-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 16px 20px;
+  left: 0;
+  top: 0;
+  font-size: 18px;
+  font-weight: 900;
+
+  svg {
+    transform: translateY(-50%);
+  }
+}
+
+.question-item:hover {
+  background-color: rgb(42, 42, 42);
+}
+
+footer {
+  padding: 80px 0;
+}
 
 /* 1200px 이하 화면 */
 @media screen and (max-width: 1024px) {
