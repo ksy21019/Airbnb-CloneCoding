@@ -40,7 +40,7 @@ header {
   max-width: 120px;
 }
 
-nav {
+.header-nav {
   display: flex;
   align-items: center;
   flex-grow: 1;
@@ -457,8 +457,9 @@ tbody>tr>td>div>svg {
     .plan-btn {
       text-align: center;
       button {
+        width: 90%;
         border-radius: 20px;
-        padding: 10px 65px;
+        padding: 15px;
         font-size: 20px;
         font-weight: 700;
       }
@@ -542,7 +543,27 @@ tbody>tr>td>div>svg {
 }
 
 footer {
-  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background-color: black;
+
+  .footer-lists {
+    display: flex;
+    gap: 60px;
+  }
+  .footer-logo {
+    
+    width: 10vw;
+  }
+  .any-lists {
+    display: flex;
+    gap: 60px;
+    > ul {
+      list-style: none;
+    }
+  }
 }
 
 /* 1200px 이하 화면 */
