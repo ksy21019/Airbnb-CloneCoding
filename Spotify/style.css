@@ -538,6 +538,7 @@ tbody>tr>td>div>svg {
   top: 0;
   font-size: 18px;
   font-weight: 900;
+  border-bottom: solid 1px rgb(29, 29, 29);
 
   svg {
     transform: translateY(-50%);
