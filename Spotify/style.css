@@ -116,7 +116,7 @@ header {
   cursor: pointer;
 }
 
-.menu-ui .menu button:hover {
+.menu-ui .menu button:hover{
   color: #1ed760;
 }
 
@@ -487,8 +487,12 @@ tbody>tr>td>div>svg {
 
 .fifth {
   justify-items: center;
-  height: 100vh;
+  height: auto;
   padding: 70px 0;
+
+  .fifth-txt {
+    width: 100%;
+  }
 
   .fifth-title {
     justify-items: center;
@@ -513,9 +517,11 @@ tbody>tr>td>div>svg {
   }
 
   .question-hidden-div {
+    display: none;
     background-color: rgb(29, 29, 29);
     padding: 30px 40px;
   }
+  
 }
 
 .question-type {
@@ -542,6 +548,7 @@ tbody>tr>td>div>svg {
   background-color: rgb(42, 42, 42);
 }
 
+
 footer {
   display: flex;
   justify-content: center;
@@ -549,19 +556,46 @@ footer {
   padding-bottom: 50px;
   background-color: black;
 
-  .footer-lists {
+  .upper-footer {
     display: flex;
-    gap: 60px;
+    gap: 70px;
   }
   .footer-logo {
-    
-    width: 10vw;
+    width: 7vw;
   }
   .any-lists {
     display: flex;
-    gap: 60px;
+    gap: 150px;
     > ul {
       list-style: none;
+      > h3 {
+        font-size: 12px;
+        color: rgb(145, 148, 150);
+      }
+      > li {
+        padding-top: 20px;
+      }
+      > li:hover{
+        color: #1ed760;
+      }
+      
+    }
+  }
+  .sns-links {
+    padding-left: 30px;
+    padding-right: 20px;
+    > ul {
+      display: flex;
+      list-style: none;
+      > li {
+        justify-content: center;
+        align-content: center;
+        padding: 15px;
+        margin-right: 25px;
+        width: fit-content;
+        background-color: rgb(34, 35, 38);
+        border-radius: 50%;
+      }
     }
   }
 }
