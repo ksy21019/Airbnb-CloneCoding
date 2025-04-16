@@ -127,11 +127,11 @@ main section {
 .first {
   background-position: clamp(65%, calc(77.5% + 250px / 2 - max(15px,env(safe-area-inset-left)) * 2 - 10px), 900px), center top;
   background-image: url("./assets/background-purple.jpeg"),
-    linear-gradient(180deg, rgb(125, 47, 149) 0%, rgb(18, 18, 18) 40%);
+    linear-gradient(180deg, rgb(125, 47, 149) 0%, rgb(18, 18, 18) 100%);
   background-repeat: no-repeat;
   
   background-size: 250px, 100% 170px;
-  height: 40vh;
+  height: auto;
 }
 
 .first>div {
@@ -210,7 +210,8 @@ main section {
 .second {
   background-color: rgb(18, 18, 18);
   align-content: center;
-  height: 70vh;
+  height: auto;
+  margin: 100px;
 }
 
 .second-content {
@@ -316,7 +317,8 @@ tbody>tr>td>div>svg {
 .third {
   background-color: rgb(18, 18, 18);
   align-content: center;
-  height: 40vh;
+  margin: 100px;
+  height: auto;
 
   div {
     text-align: center;
@@ -377,7 +379,8 @@ tbody>tr>td>div>svg {
   background-color: rgb(18, 18, 18);
   justify-content: center;
   align-content: center;
-  height: 35vh;
+  margin: 50px auto;
+  height: auto;
 
   .plan-premium-title img {
     width: 20px;
@@ -410,10 +413,10 @@ tbody>tr>td>div>svg {
 
   .container>div {
     background-color: rgb(42, 42, 42);
-    border: 1px solid rgb(42, 42, 42);
     border-radius: 10px;
     width: 400px;
-    height: 400px;
+    height: auto;
+    padding-bottom: 30px;
 
     .individual-tag {
       display: flex;
