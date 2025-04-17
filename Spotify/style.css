@@ -67,7 +67,7 @@ header {
 .menu:hover #premium-menu {
   display: block;
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(30%);
 }
 
 /* 드롭다운 메뉴 스타일 */
@@ -531,6 +531,8 @@ tbody>tr>td>div>svg {
 }
 
 .question-type {
+  width: 80%;
+  margin: auto;
   padding: 20px;
 }
 
@@ -565,6 +567,7 @@ footer {
 
   .upper-footer {
     display: flex;
+    justify-content: center;
     gap: 70px;
   }
   .footer-logo {
@@ -584,6 +587,7 @@ footer {
       }
       > li:hover{
         color: #1ed760;
+        cursor: pointer;
       }
       
     }
@@ -603,26 +607,51 @@ footer {
         background-color: rgb(34, 35, 38);
         border-radius: 50%;
       }
+      > li:hover {
+        cursor: pointer;
+      }
     }
   }
   .bottom-footer {
+    margin: auto;
+    width: 90%;
     .global > a {
+      margin-top: 20px;
       display: flex;
       justify-content: end;
       color: rgb(145, 148, 150);
       text-decoration: none;
       font-size: 12px;
     }
+    .global > a:hover {
+      color: #1ed760;
+    }
     .info-first {
+      margin-top: 20px;
       color: rgb(145, 148, 150);
       display: flex;
+      justify-content: space-between;
+      font-size: 12px;
       > ul {
         display: flex;
+        gap: 20px;
         list-style: none;
       }
-      a {
+      > ul > li > a {
         text-decoration: none;
         color: rgb(145, 148, 150);
+      }
+      > ul > li > a:hover {
+        color: #1ed760;
+      }
+
+    }
+    .info-last {
+      margin-top: 20px;
+      color: rgb(145, 148, 150);
+      font-size: 12px;
+      > span > a:hover {
+        cursor: pointer;
       }
     }
   }
