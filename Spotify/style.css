@@ -320,12 +320,12 @@ tbody>tr>td>div>svg {
 
 .third {
   background-color: rgb(18, 18, 18);
-  align-content: center;
   margin: 100px;
   height: auto;
 
   div {
     text-align: center;
+    justify-items: center;
 
     h2 {
       font-size: 32px;
@@ -337,10 +337,10 @@ tbody>tr>td>div>svg {
       font-size: 15px;
       font-weight: 400;
     }
-
-    span {
-      border-bottom: solid 1.5px;
-    }
+  }
+  .other-way-toggle-span {
+    margin: 8px 0 0 8px;
+    text-decoration: underline;
   }
 
   .payment-way {
@@ -355,6 +355,31 @@ tbody>tr>td>div>svg {
     li>img {
       width: 50px;
       object-fit: contain;
+    }
+  }
+  .payment-other-way {
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 232px;
+    padding: 8px 4px;
+    margin: 10px 0;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 8px;
+
+    li {
+      display: list-item;
+      width: 50px;
+      height: 43px;
+      padding: 4px;
+      line-height: 32px;
+    }
+    li>img {
+      width: 40px;
     }
   }
 

@@ -7,6 +7,7 @@ toggleBtn.addEventListener('click',() => {
 })
 
 
+/* 궁금한 점 토글 */
 document.addEventListener('DOMContentLoaded', function () {
   const items = document.querySelectorAll('.question-item');
 
