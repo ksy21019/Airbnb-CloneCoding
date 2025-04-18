@@ -1,3 +1,12 @@
+/* 헤더 메뉴 토글 */
+const toggleBtn = document.querySelector('.header-toggle-btn');
+const menu = document.querySelector('.menu-ui');
+
+toggleBtn.addEventListener('click',() => {
+  menu.classList.toggle('active')
+})
+
+
 document.addEventListener('DOMContentLoaded', function () {
   const items = document.querySelectorAll('.question-item');
 
