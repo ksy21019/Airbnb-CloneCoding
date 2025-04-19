@@ -342,6 +342,9 @@ tbody>tr>td>div>svg {
     margin: 8px 0 0 8px;
     text-decoration: underline;
   }
+  .other-way-toggle-span:hover .payment-other-way {
+    display: grid;
+  }
 
   .payment-way {
     display: flex;
@@ -358,7 +361,10 @@ tbody>tr>td>div>svg {
     }
   }
   .payment-other-way {
-    display: grid;
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     place-items: center;
     box-sizing: border-box;
     justify-content: center;
@@ -392,7 +398,7 @@ tbody>tr>td>div>svg {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px 0;
+    margin: 60px 0;
     padding: 0 32px;
     gap: 40px;
 
