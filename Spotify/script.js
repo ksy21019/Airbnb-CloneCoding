@@ -1,12 +1,3 @@
-/* 헤더 메뉴 토글 */
-const toggleBtn = document.querySelector('.header-toggle-btn');
-const menu = document.querySelector('.menu-ui');
-
-toggleBtn.addEventListener('click',() => {
-  menu.classList.toggle('active')
-})
-
-
 /* 궁금한 점 토글 */
 document.addEventListener('DOMContentLoaded', function () {
   const items = document.querySelectorAll('.question-item');
