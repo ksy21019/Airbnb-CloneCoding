@@ -742,6 +742,34 @@ footer {
     padding-right: 24px;
     > aside {
       margin: 48px 0;
+      > h3 {
+        font-size: 24px;
+      }
+      > ul {
+        padding-left: 10px;
+      }
+    }
+  }
+  
+  .forth {
+    display: flex;
+    justify-content: center;
+    .container {
+      flex-direction: column;
+
+      > div {
+        width: 450px;
+      }
+    }
+  }
+
+  .fifth {
+    .fifth-txt {
+      justify-items: center;
+    }
+    .question-type {
+      margin: 0;
+      width: 100%;
     }
   }
 }
