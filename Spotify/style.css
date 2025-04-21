@@ -604,6 +604,11 @@ footer {
   padding-bottom: 50px;
   background-color: black;
 
+  .footer-nav {
+    display: block;
+    width: 90%;
+  }
+
   .upper-footer {
     display: flex;
     justify-content: center;
@@ -771,5 +776,20 @@ footer {
       margin: 0;
       width: 100%;
     }
+  }
+
+  .footer {
+    .upper-footer {
+      display: flex;
+      flex-direction: column;
+      > .any-lists {
+        column-gap: 20px;
+        > ul > li {
+          display: block;
+          width: 70px;
+        }
+      }
+    }
+    
   }
 }
