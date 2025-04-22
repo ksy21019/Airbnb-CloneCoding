@@ -129,7 +129,6 @@ main section {
   background-image: url("./assets/background-purple.jpeg"),
     linear-gradient(180deg, rgb(125, 47, 149) 0%, rgb(18, 18, 18) 100%);
   background-repeat: no-repeat;
-  
   background-size: 250px, 100% 170px;
   height: auto;
 }
@@ -598,6 +597,7 @@ tbody>tr>td>div>svg {
 }
 
 footer {
+  width: 100%;
   display: flex;
   justify-content: center;
   padding-top: 80px;
@@ -614,7 +614,7 @@ footer {
     justify-content: center;
     gap: 70px;
   }
-  .footer-logo {
+  .footer-logo > img {
     width: 7vw;
   }
   .any-lists {
@@ -782,8 +782,15 @@ footer {
     .upper-footer {
       display: flex;
       flex-direction: column;
-      > .any-lists {
-        column-gap: 20px;
+      
+      .footer-logo {
+        display: block;
+        height: 40px;
+      }
+
+      .any-lists {
+        gap: 50px;
+
         > ul > li {
           display: block;
           width: 70px;
