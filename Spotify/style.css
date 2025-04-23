@@ -120,6 +120,10 @@ header {
   color: #1ed760;
 }
 
+.header-toggle-btn {
+  display: none;
+}
+
 main section {
   height: 600px;
 }
@@ -710,14 +714,40 @@ footer {
   }
 
   .header-nav {
-    flex-direction: column;
 
     > .menu-ui {
       display: none;
     }
+
+    > .menu-ui.active {
+      display: flex !important;
+      flex-direction: column;
+      position: fixed;
+      top: 8%;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background-color: black;
+      z-index: 999;
+      padding: 100px 24px 40px;
+      gap: 20px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .menu-ui.active .left-menu, .menu-ui.active .right-menu {
+      font-size: 24px;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    .menu-ui.active li[role="separator"] {
+      display: none;
+    }
     
     > .header-toggle-btn {
-      display: block;
+      display: flex;
+      justify-content: end;
     }
   }
 

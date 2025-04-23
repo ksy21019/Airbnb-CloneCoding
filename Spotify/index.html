@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="reset" href="./reset.css">
   <link rel="icon" href="./assets/favicon.svg">
-  <script src="./script.js"></script>
 </head>
 
 <body>
@@ -51,9 +50,11 @@
             <button class="right-menu">로그인하기</button>
           </li>
         </ul>
-        <a href="#" class="header-toggle-btn">
-          <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i>
-        </a>
+        <div class="header-toggle-btn">
+          <span class="header-toggle-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" width="28" viewBox="0 0 448 512"><path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+          </span>
+        </div>
       </nav>
     </div>
   </header>
@@ -547,6 +548,7 @@
         </div>
     </nav>
   </footer>
+  <script src="./script.js"></script>
 </body>
 
 </html>
