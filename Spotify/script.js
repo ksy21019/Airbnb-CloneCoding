@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // 헤더 토글 메뉴 기능 추가
   const toggleBtn = document.querySelector(".header-toggle-btn");
-  const menu = document.querySelector(".menu-ui");
+  const overlay = document.querySelector(".header-overlay");
+  const menu = document.querySelector(".header-mobile-menu");
   const iconContainer = document.querySelector(".header-toggle-icon");
 
   const headerMenuIcon = `
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
   `;
 
   toggleBtn.addEventListener("click", () => {
+    overlay.classList.toggle("active");
     menu.classList.toggle("active");
 
     iconContainer.innerHTML = menu.classList.contains("active") ? headerCloseIcon : headerMenuIcon;
