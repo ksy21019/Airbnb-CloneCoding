@@ -36,7 +36,10 @@ document.addEventListener('DOMContentLoaded', function () {
     </svg>
   `;
 
+  const body = document.querySelector("body");
+
   toggleBtn.addEventListener("click", () => {
+
     overlay.classList.toggle("active");
     menu.classList.toggle("active");
 

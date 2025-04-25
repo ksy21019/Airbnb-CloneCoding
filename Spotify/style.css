@@ -2,6 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden
 }
 
 * {
@@ -707,7 +708,6 @@ footer {
 
 /* 모바일에 최적화된 예외 CSS 코드 */
 @media screen and (max-width: 768px) {
-
   .menu-ui {
     display: none;
   }
@@ -716,8 +716,6 @@ footer {
     display: block;
   }
 
-  
-  
   .header-overlay {
     display: none;
     position: fixed;
@@ -733,22 +731,61 @@ footer {
   .header-mobile-menu {
     display: none;
     justify-content: space-between;
-    line-height: 40px;
+    line-height: 50px;
     flex-direction: column;
     position: fixed;
     right: 0;
-    width: 50%;
-    height: 89%;
+    width: 55%;
+    height: 95%;
     background-color: black;
     z-index: 2;
     padding: 30px;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    
 
     > ul {
       list-style: none;
-      font-size: 32px;
-      font-weight: 700;
+      .mobile-upper-menu {
+        font-size: 36px;
+        font-weight: 700;
+      }
+      #pointer:hover {
+        cursor: pointer;
+      }
+      #green-pointer:hover {
+        cursor: pointer;
+        color: #1ed760;
+      }
+      .mobile-bottom-menu {
+        color: rgb(217, 218, 220);
+        font-size: 28px;
+        font-weight: 400;
+      }
+    }
+    > ul > li > ul > li {
+      margin: 10px;
+      list-style: none;
+      font-size: 15px;
+      background-color: #222;
+      > a {
+        padding: 15px 10px;
+        display: flex;
+        flex-direction: column;
+        line-height: 25px;
+        text-decoration: none;
+        color: #fff;
+        .mobile-plan {
+          font-size: 16px;
+          font-weight: 700;
+        }
+        .mobile-plan-descript {
+          color: rgb(204, 204, 204);
+          font-size: 13px;
+          font-weight: 400;
+        }
+      }
+      > a:hover {
+        background-color: black;
+      }
     }
   }
 
@@ -821,24 +858,6 @@ footer {
   }
 
   .footer {
-    .upper-footer {
-      display: flex;
-      flex-direction: column;
-      
-      .footer-logo {
-        display: block;
-        height: 40px;
-      }
-
-      .any-lists {
-        gap: 50px;
-
-        > ul > li {
-          display: block;
-          width: 70px;
-        }
-      }
-    }
     
   }
 }
