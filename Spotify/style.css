@@ -611,7 +611,7 @@ footer {
 
   .footer-nav {
     display: block;
-    width: 90%;
+    width: 100%;
   }
 
   .upper-footer {
@@ -855,9 +855,5 @@ footer {
       margin: 0;
       width: 100%;
     }
-  }
-
-  .footer {
-    
   }
 }
