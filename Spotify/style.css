@@ -623,16 +623,16 @@ footer {
     display: flex;
     justify-self: center;
     justify-content: space-between;
+    flex-direction: row;
     flex-wrap: wrap;
-    overflow: auto;
     width: 90%;
-  }
-  .footer-logo {
     height: fit-content;
   }
-  .footer-logo > img {
-    width: 7vw;
+  .footer-logo {
+    width: 10%;
+    height: 10%;
   }
+
   .any-lists {
     display: flex;
     gap: 150px;
@@ -715,7 +715,7 @@ footer {
   }
 }
 
-/* 모바일에 최적화된 예외 CSS 코드 */
+
 @media screen and (max-width: 768px) {
   .menu-ui {
     display: none;
@@ -864,8 +864,5 @@ footer {
       margin: 0;
       width: 100%;
     }
-  }
-  .footer {
-    
   }
 }
