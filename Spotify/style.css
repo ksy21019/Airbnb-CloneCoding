@@ -715,8 +715,11 @@ footer {
   }
 }
 
+@media (max-width: 534px) {
+  
+}
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .menu-ui {
     display: none;
   }
@@ -810,9 +813,17 @@ footer {
   }
 
   .first {
+    padding-top: 400px;
+    background-position-x: 50%;
+    background-position-y: 0;
+    background-image: linear-gradient(bottom, rgba(255, 255, 255, 0) 100%
+    ), url("./assets/background-purple.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
     > div {
       margin: 0;
       padding: 50px 20px;
+      width: 100%;
     }
   }
   
